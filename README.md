@@ -6,3 +6,5 @@ features:
 + login
 + delete/update any user
 + create/find/update/delete any contact
+
+test user e-mail: deneme@deneme.com // password: deneme
