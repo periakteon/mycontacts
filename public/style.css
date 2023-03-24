@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+body {
+	background: linear-gradient(to bottom right, #b3e5fc, #e1bee7);
+	font-family: 'Poppins', sans-serif;
+}
+
+#login-status {
+	display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+	background: linear-gradient(to bottom right, #90caf9, #ce93d8);
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+
+.login-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	padding: 40px;
+	background: linear-gradient(to bottom right, #212121, #424242);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+
+.login-box h2 {
+	margin: 0 0 30px;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+}
+
+.user-box {
+	position: relative;
+	margin: 45px 0 0 0;
+}
+
+.user-box input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+
+.user-box label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: 0.5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+	top: -30px;
+	left: 0;
+	color: #ba68c8;
+	font-size: 12px;
+}
+
+button[type="submit"] {
+	border: none;
+	outline: none;
+	width: 100%;
+	background: linear-gradient(to bottom right, #4fc3f7, #ba68c8);
+	color: #fff;
+	padding: 10px 0;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-top: 40px;
+}
+
+button[type="submit"]:hover {
+	background: linear-gradient(to bottom right, #039be5, #ab47bc);
+}
+
+@media (max-width: 768px) {
+  .login-box {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    padding: 10px;
+    max-width: 90%;
+  }
+  .user-box input {
+    font-size: 14px;
+  }
+  .user-box label {
+    font-size: 14px;
+  }
+  button[type="submit"] {
+    font-size: 16px;
+  }
+}

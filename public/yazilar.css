@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+*,
+::before,
+::after {
+  box-sizing: border-box;             /* Tanımlanacak margin ve padding değerleri width ve height değerlerini etkilemesin diye */
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  background: linear-gradient(to right, #8A2BE2, #502be2, #1E90FF);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px #333;
+}
+
+.card {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.error {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: #e74c3c;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+.error::before {
+  content: "\26A0";
+  position: absolute;
+  top: 50%;
+  top: 3.5rem;
+  left: 13.5rem;
+  transform: translateY(-50%);
+  font-size: 20rem;
+  opacity: 0.5;
+}
+
+.error p {
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.card p {
+  margin: 0;
+  color: #777;
+}
+
+.card .baslik {
+  font-weight: bold;
+  color: #444;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
